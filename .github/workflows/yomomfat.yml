@@ -25,6 +25,3 @@ jobs:
       run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp --region ap 3389"'
     - name: Try to loop
       run: $userInput = Read-Host "Enter your input here"
-
-    - name: Extract
-      run: Expand-Archive ngrok.zip
